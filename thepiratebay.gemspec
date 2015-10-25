@@ -1,6 +1,6 @@
 spec = Gem::Specification.new do |s|
   s.name              = %q{thepiratebay}
-  s.version           = '0.2.0'
+  s.version           = '0.3.0'
   s.summary           = %q{A simple interface to The Pirate Bay}
   s.description       = %q{A simple interface to The Pirate Bay}
   s.files             = `git ls-files`.split("\n")
