@@ -23,4 +23,4 @@ Then simply require it
 
 ## Usage
 
-See the [API.md](#) file
+See the [API.md](https://github.com/mhsjlw/thepiratebay/blob/master/API.md) file
