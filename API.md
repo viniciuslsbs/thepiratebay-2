@@ -1,4 +1,13 @@
-## Usage Examples
+## Example search
+    
+    require 'bundler/setup'
+    require 'thepiratebay'
+
+    query = ThePirateBay::Search.new('query').results[0]
+    puts query[:title]
+    puts "#{query[:seeders]}" + " seeders and " + "#{query[:leechers]}" + " leechers"
+
+## API
 
     # Search for torrents, returns array
     ThePirateBay::Search.new('query').results
