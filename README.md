@@ -1,45 +1,26 @@
-The ThePirateBay Ruby Gem
+ThePirateBay Gem
 ====================
-A simple interface to ThePirateBay.org
 
-Installation
-------------
-    gem install thepiratebay
+> "With great power comes great responsibility" - Anonymous
 
+This is a simple interface to [The Pirate Bay](https://thepiratebay.la) updated by [mhsjlw](https://github.com/mhsjlw)
 
-Usage Examples
---------------
+## Installation
+This revised gem is not published so you will have to install it yourself, or if you are using bundler add this line:
+    
+    gem 'thepiratebay', :git => "https://github.com/mhsjlw/thepiratebay.git"
+    
+Or, if you aren't using bundler run these commands
+
+    git clone https://github.com/mhsjlw/thepiratebay
+    gem build thepiratebay/thepiratebay.gemspec
+    gem install thepiratebay/thepiratebay-*.gem
+    
+Then simply require it
+    
     require 'thepiratebay'
+    
 
-    # Search for torrents, returns array
-    ThePirateBay::Search.new('query').results
+## Usage
 
-    # Lookup specific torrent with the tpb torrent id
-    ThePirateBay::Torrent.find("123123123")
-
-    # Page, sort and category is optional - (query, page, sort, category)
-    # Page 2 is actually page 3, you know the drill
-    ThePirateBay::Search.new('query', 2, ThePirateBay::SortBy::Seeders, ThePirateBay::Category::Video).results
-
-    # The following sortings are available:
-    ThePirateBay::SortBy::Relevance   # ThePirateBay-decided relevancy, I think
-    ThePirateBay::SortBy::Name_asc    # Name ascending
-    ThePirateBay::SortBy::Name_desc   # Name descending
-    ThePirateBay::SortBy::Size        # Size, largest first
-    ThePirateBay::SortBy::Seeders     # Most seeders first
-    ThePirateBay::SortBy::Leechers    # Most leechers first
-    ThePirateBay::SortBy::Type        # Type name descending
-    ThePirateBay::SortBy::Uploaded    # Latest first
-
-    # The following categories are available:
-    ThePirateBay::Category::Audio
-    ThePirateBay::Category::Video
-    ThePirateBay::Category::Applications
-    ThePirateBay::Category::Games
-    ThePirateBay::Category::Others
-
-ZOMG ZOMG WHERE ARE THE SPECS?!
--------------------------------
-Yeah, no. I didn't write them.
-The gem is fairly basic.
-Still want them? Send me a pull-request.
+See the [API.md](#) file
