@@ -3,7 +3,7 @@ ThePirateBay Gem
 
 > "With great power comes great responsibility" - Anonymous
 
-This is a simple interface to [The Pirate Bay](https://thepiratebay.la) updated by [mhsjlw](https://github.com/mhsjlw)
+This is a simple interface to [The Pirate Bay](https://thepiratebay.la) ruby gem by [emln](https://github.com/emnl/thepiratebay) updated by [mhsjlw](https://github.com/mhsjlw)
 
 ## Installation
 This revised gem is not published so you will have to install it yourself, or if you are using bundler add this line:
